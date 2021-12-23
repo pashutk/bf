@@ -1,0 +1,31 @@
+{
+  "name": "ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start1": "ts-node 01-naive/main.ts",
+    "start2": "ts-node 02-runtime-and-programs/main.ts",
+    "start3": "ts-node 03-parser/main.ts",
+    "start4": "ts-node 04-zipper/main.ts",
+    "start5": "ts-node 05-task/main.ts",
+    "start6": "ts-node 06-taskreader/main.ts",
+    "start7": "ts-node 07-ir/main.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^16.11.6",
+    "ts-node": "^10.4.0",
+    "tslib": "^2.3.1",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "fp-ts": "^2.11.5",
+    "fp-ts-contrib": "^0.1.26",
+    "monocle-ts": "^2.3.11",
+    "morphic-ts": "^0.8.0-rc.2",
+    "parser-ts": "^0.6.15"
+  }
+}
