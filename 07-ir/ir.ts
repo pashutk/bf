@@ -71,7 +71,7 @@ const collapseAddAndMove = ({ last, result }: SameOpAcc, op: Op): SameOpAcc => {
   };
 };
 
-const _optimize = (ops: RNEA.ReadonlyNonEmptyArray<Op>): ReadonlyArray<Op> =>
+const _optimize = (ops: RNEA.ReadonlyNonEmptyArray<Op>): RNEA.ReadonlyNonEmptyArray<Op> =>
   pipe(
     ops,
     RNEA.matchLeft((head, tail) => pipe(tail, RA.reduce(zeroSameOpAcc(head), collapseAddAndMove), sameOpAccToRNEA))
